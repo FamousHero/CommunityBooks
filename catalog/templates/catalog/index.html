@@ -4,11 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'catalog/main.css' %}">
     <title>Community Books [Location]</title>
 </head>
 <body>
-    Hello World! Did you pray today
-    <script src="{% static 'catalog/main.js' %}"
-        ></script>
+    <p>Hello! Welcome to your Community Library.</p>
+
+    <!-- Form -->
+    <p>Please select the community you are a part of: </p>
+    <legend>What community are you from: </legend>
+        <select name="location">
+            <!-- Replace with iterative through database -->
+            <option value="Orange county">Orange County</option>
+            <option value="The Vineyards (Palmdale)">The Vineyards (Palmdale)</option>
+            <option value="Pasadena">Pasadena</option>
+
+        </select>
+
+    <button id="dragon">Select</button>
+    <!-- End Form -->
+    <section id="catalog-section"></section>
+
+    <p>Looking to add a book to loan? <a href="{% url 'loan-form' %}">Click Here</a></p>
+    <p>Want a book but can't afford it? <a href="{% url 'wishlist-form' %}">Let us know!</a></p>
+    <p>Have Money? <a href="{% url 'wishlist' %}"> Buy Someones Dream Book!</a></p>
+    <script type="module" src="{% static 'catalog/main.js' %}"
+        defer></script>
 </body>
 </html>

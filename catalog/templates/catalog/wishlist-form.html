@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Community Wishlist </title>
+    <link rel="stylesheet" href="{% static 'catalog/main.css' %}">
+    <title>Wishlist Form</title>
 </head>
 <body>
-    Wishlist Page
-    <!-- Refresh as SPA -->
-    <legend>What community are you from: </legend>
+    <form action="">
+        <legend>What community are you from: </legend>
         <select name="location">
             <!-- Replace with iterative through database -->
             <option value="Orange county">Orange County</option>
@@ -17,8 +17,16 @@
             <option value="Pasadena">Pasadena</option>
 
         </select>
-        <!-- Hydrate w/ Javascript once location is chosen -->
-    <script type="module" src="{% static 'catalog/main.js' %}"
-        ></script>
+        <!--  Link to gov database to get photo of cover -->
+        <h3>What book do you want?</h3>
+            <p>ISBN #: </p>
+            
+            
+            <span class="bold">OR</span>
+            
+            
+            <p>Title: </p>
+            <p>Author: </p>
+    </form>
 </body>
 </html>

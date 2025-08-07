@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'catalog/main.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <legend>What community are you from: </legend>
+            <select name="location">
+                <!-- Replace with iterative through database -->
+                <option value="Orange county">Orange County</option>
+                <option value="The Vineyards (Palmdale)">The Vineyards (Palmdale)</option>
+                <option value="Pasadena">Pasadena</option>
+            </select>
+        <!--  Link to gov database to get photo of cover -->
+        <h3>What book are you offering: </h3>
+            <p>ISBN #: </p>
+            
+            
+            <span class="bold">OR</span>
+            
+            
+            <p>Title: </p>
+            <p>Author: </p>
+
+        <h3>How can people reach you to pick-up?</h3>
+            <p>email: </p>
+            <p>Phone #: </p>
+            <p>Address: </p>
+    </form>
+</body>
+</html>
