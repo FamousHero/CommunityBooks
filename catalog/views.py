@@ -15,6 +15,9 @@ def wishlist(request):
 def addBook(request):
     return render(request, "catalog/loan-form.html")
 
+def signup(request):
+    return render(request, "catalog/signup.html")
+
 def addWishlistForm(request):
     return render(request, "catalog/wishlist-form.html")
 

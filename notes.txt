@@ -9,3 +9,5 @@ Requirements:
 - Encourage loaners to update status of book from checked-out to returned when done & brought back
 
 - Dont want to overcrowd community library so notify book owner when book is returned OR MAKE CURRENT HOLDER OWNER UNTIL BOOK REQUESTED. (just change book status back to available)
+- Allow anon users to see books at all communities, doesn't matter since they can't request a book without an
+    account + they won't know the drop-off location (site should be found by visiting community box)
