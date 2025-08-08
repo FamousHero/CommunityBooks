@@ -9,6 +9,30 @@
 </head>
 <body>
     Signup Page
+    <form action="">
+        <div>
+            <label>What community are you from: </label>
+            <select name="location">
+                <!-- Replace with iterative through database -->
+                <option value="Orange county">Orange County</option>
+                <option value="The Vineyards (Palmdale)">The Vineyards (Palmdale)</option>
+                <option value="Pasadena">Pasadena</option>
+            </select>
+        </div>
+        <div>
+            <label for="email">Enter your email: </label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="password">Enter your password: </label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <div>
+            <label for="re-password">Re-enter your password: </label>
+            <input type="re-password" name="re-password" id="re-password" required>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
     <script type="module" src="{% static 'catalog/main.js' %}"
         ></script>
 </body>
