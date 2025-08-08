@@ -4,6 +4,7 @@ Requirements:
 - No PII, meaning no email, phone #, or address. All drop-offs and pick-ups should be done at a designated area, ie. community library box.
 - Link to 3rd party api for book info (Google books, gov website if possible, & worldcat catalog, or scraping lacountylib.org)
 - When a book is requested, send notif to owner -> they pick a date & time to drop off book by -> requester notified of selected time.
+- Log all book drop-off times & involved parties in case missing persons report, etc.
 - When time hits, change book from available to checked-out
 - Encourage loaners to update status of book from checked-out to returned when done & brought back
 
